@@ -1,0 +1,107 @@
+:root {
+  --background: #282a36;
+  --current-line: #44475a;
+  --selection: #44475a;
+  --foreground: #f8f8f2;
+  --comment: #6272a4;
+  --cyan: #8be9fd;
+  --green: #50fa7b;
+  --orange: #ffb86c;
+  --pink: #ff79c6;
+  --purple: #bd93f9;
+  --red: #ff5555;
+  --yellow: #f1fa8c;
+}
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: Arial, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  color: var(--cyan);
+  padding: 20px;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 20px auto;
+}
+
+th {
+  background-color: var(--current-line);
+  color: var(--foreground);
+  font-weight: bold;
+  padding: 10px;
+  text-align: center;
+  border: 1px solid var(--current-line);
+}
+
+td {
+  background-color: var(--background);
+  color: var(--foreground);
+  padding: 10px;
+  text-align: left;
+  border: 1px solid var(--current-line);
+}
+
+td code {
+  color: var(--green);
+  font-size: 1.2rem;
+}
+
+.copy-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.25rem;
+  font: bold 1.0rem Arial, sans-serif;
+  color: var(--foreground);
+  background-color: var(--current-line);
+  cursor: pointer;
+  transition: var(--comment) 0.3s ease;
+  transform-origin: center bottom;
+}
+
+.copy-button:hover {
+  transform: scale(1.2);
+  background-color: var(--cyan);
+  color: var(--background);
+}
+
+.copied {
+  background-color: var(--green);
+  color: var(--background);
+  font: bold 1.0rem Arial, sans-serif;
+}
+
+footer {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-size: 0.875rem;
+  padding: 1rem;
+  text-align: center;
+  margin-top: auto;
+  padding-bottom: 0;
+  font-size: 2rem;
+}
+
+footer a {
+  color: var(--cyan);
+  text-decoration: none;
+  transition: var(--comment) 0.3s ease;
+}
+
+footer a:hover {
+  color: var(--pink);
+}

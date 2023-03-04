@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Comandos Úteis</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>Comandos Úteis do Docker e Docker Compose</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Copiar</th>
+        <th>Comando</th>
+        <th>Descrição</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><button class="copy-button"
+            onclick="copyToClipboard(this, 'docker container rm $(docker container ls -a -q) -f')">Copiar
+            Comando</button></td>
+        <td><code>docker container rm $(docker container ls -a -q) -f</code></td>
+        <td>deleta todos os containers de uma única vez</td>
+      </tr>
+      <tr>
+        <td><button class="copy-button" onclick="copyToClipboard(this, 'docker image rm $(docker image ls -q)')">Copiar
+            Comando</button></td>
+        <td><code>docker image rm $(docker image ls -q)</code></td>
+        <td>deleta todas imagens de uma única vez</td>
+      </tr>
+      <tr>
+        <td><button class="copy-button"
+            onclick="copyToClipboard(this, 'docker network rm $(docker network ls -q)')">Copiar Comando</button></td>
+        <td><code>docker network rm $(docker network ls -q)</code></td>
+        <td>deleta todas as redes de uma única vez</td>
+      </tr>
+      <tr>
+        <td><button class="copy-button"
+            onclick="copyToClipboard(this, 'docker volume rm $(docker volume ls -q)')">Copiar Comando</button></td>
+        <td><code>docker volume rm $(docker volume ls -q)</code></td>
+        <td>deleta todos os volumes de uma única vez</td>
+      </tr>
+      <tr>
+        <td><button class="copy-button" onclick="copyToClipboard(this, 'docker container ls -a')">Copiar
+            Comando</button>
+        </td>
+        <td><code>docker container ls -a</code></td>
+        <td>lista todos os containers.</td>
+      </tr>
+      <tr>
+        <td><button class="copy-button" onclick="copyToClipboard(this, 'docker container ls -a')">Copiar
+            Comando</button>
+        </td>
+        <td><code>docker container ls</code></td>
+        <td>lista todos os containers em execução</td>
+      </tr>
+      <tr>
+        <td><button class="copy-button" onclick="copyToClipboard(this, 'docker container ls -a')">Copiar
+            Comando</button>
+        </td>
+        <td><code>docker container ls --format '{{.Names}}'
+        </code></td>
+        <td>lista apenas os nomes dos containers que estão em execução</td>
+      </tr>
+      <tr>
+        <td><button class="copy-button" onclick="copyToClipboard(this, 'docker container ls -a')">Copiar
+            Comando</button>
+        </td>
+        <td><code>docker info</code></td>
+        <td>útil para verificar se o serviço daemon está em execução</td>
+      </tr>
+      <tr>
+        <td><button class="copy-button" onclick="copyToClipboard(this, 'docker container ls -a')">Copiar
+            Comando</button>
+        </td>
+        <td><code>docker-compose up -d</code></td>
+        <td>cria e inicia os containers definidos no docker-compose.yml liberando o terminal</td>
+      </tr>
+      <tr>
+        <td><button class="copy-button" onclick="copyToClipboard(this, 'docker container ls -a')">Copiar
+            Comando</button>
+        </td>
+        <td><code>docker-compose start</code></td>
+        <td>inicia os containers listados no docker-compose.yml</td>
+      </tr>
+      <tr>
+        <td><button class="copy-button" onclick="copyToClipboard(this, 'docker container ls -a')">Copiar
+            Comando</button>
+        </td>
+        <td><code>docker-compose stop</code></td>
+        <td>para todos os containers listados no docker-compose.yml</td>
+      </tr>
+      <tr>
+        <td><button class="copy-button" onclick="copyToClipboard(this, 'docker container ls -a')">Copiar
+            Comando</button>
+        </td>
+        <td><code>docker-compose down</code></td>
+        <td>para e remove todos recursos criados dos container listados no docker-compose.yml</td>
+      </tr>
+    </tbody>
+  </table>
+  <footer>
+    <p>Feito por <a href="https://github.com/marciodanielll">M.D.</a></p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
