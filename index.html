@@ -50,14 +50,14 @@
         <td>lista todos os containers.</td>
       </tr>
       <tr>
-        <td><button class="copy-button" onclick="copyToClipboard(this, 'docker container ls -a')">Copiar
+        <td><button class="copy-button" onclick="copyToClipboard(this, 'docker container ls')">Copiar
             Comando</button>
         </td>
         <td><code>docker container ls</code></td>
         <td>lista todos os containers em execução</td>
       </tr>
       <tr>
-        <td><button class="copy-button" onclick="copyToClipboard(this, 'docker container ls -a')">Copiar
+        <td><button class="copy-button" onclick="copyToClipboard(this, 'docker container ls --format '{{.Names}}')">Copiar
             Comando</button>
         </td>
         <td><code>docker container ls --format '{{.Names}}'
@@ -65,35 +65,35 @@
         <td>lista apenas os nomes dos containers que estão em execução</td>
       </tr>
       <tr>
-        <td><button class="copy-button" onclick="copyToClipboard(this, 'docker container ls -a')">Copiar
+        <td><button class="copy-button" onclick="copyToClipboard(this, 'docker info')">Copiar
             Comando</button>
         </td>
         <td><code>docker info</code></td>
         <td>útil para verificar se o serviço daemon está em execução</td>
       </tr>
       <tr>
-        <td><button class="copy-button" onclick="copyToClipboard(this, 'docker container ls -a')">Copiar
+        <td><button class="copy-button" onclick="copyToClipboard(this, 'docker-compose up -d')">Copiar
             Comando</button>
         </td>
         <td><code>docker-compose up -d</code></td>
         <td>cria e inicia os containers definidos no docker-compose.yml liberando o terminal</td>
       </tr>
       <tr>
-        <td><button class="copy-button" onclick="copyToClipboard(this, 'docker container ls -a')">Copiar
+        <td><button class="copy-button" onclick="copyToClipboard(this, 'docker-compose start')">Copiar
             Comando</button>
         </td>
         <td><code>docker-compose start</code></td>
         <td>inicia os containers listados no docker-compose.yml</td>
       </tr>
       <tr>
-        <td><button class="copy-button" onclick="copyToClipboard(this, 'docker container ls -a')">Copiar
+        <td><button class="copy-button" onclick="copyToClipboard(this, 'docker-compose stop')">Copiar
             Comando</button>
         </td>
         <td><code>docker-compose stop</code></td>
         <td>para todos os containers listados no docker-compose.yml</td>
       </tr>
       <tr>
-        <td><button class="copy-button" onclick="copyToClipboard(this, 'docker container ls -a')">Copiar
+        <td><button class="copy-button" onclick="copyToClipboard(this, 'docker-compose down')">Copiar
             Comando</button>
         </td>
         <td><code>docker-compose down</code></td>
