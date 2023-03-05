@@ -57,7 +57,7 @@
         <td>lista todos os containers em execução</td>
       </tr>
       <tr>
-        <td><button class="copy-button" onclick="copyToClipboard(this, 'docker container ls --format '{{.Names}}')">Copiar
+        <td><button class="copy-button" onclick="copyToClipboard(this, 'docker container ls --format {{.Names}}')">Copiar
             Comando</button>
         </td>
         <td><code>docker container ls --format '{{.Names}}'
